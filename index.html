@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTA=08">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title">Living in Japan Survey Form</h1>
+  <p id="description">Tell us about your experience living in Japan</p>
+  <form id="survey-form">
+    <label id="name-label" for="name">Name:</label>
+    <input id="name" name="name"type="text" required placeholder="Enter your name"></input>
+    <label id="email-label" for="email">Email:</label>
+    <input id="email" name="email"type="email" required placeholder="Enter your Email"></input>
+    <label id="number-label" for="number">Age (Optional):</label>
+    <input id="number" name="age"type="number" placeholder="Age" min="18" max="99"></input>
+
+<label>What brought you to Japan?</label>
+    <select id="dropdown">
+      <option>Select one</option>
+      <option>Sightseeing/Travel</option>
+      <option>Business</option>
+      <option>Friends/Family</option>
+      <option>Other</option>
+    </select>
+
+    <p>Would you recommend living in Japan to a friend?</p>
+    <label>
+    <input name="recommend" type="radio" class="input-radio"value="definately">Definately</input>
+    </label>
+    
+<label><input name="recommend" type="radio" class="input-radio"value="maybe">Maybe</input>
+</label>
+    <label> 
+    <input name="recommend" type="radio" class="input-radio"value="not-sure">Not sure</input>
+    </label>
+
+    <label>What is your favourite part about Japan?</label>
+    <select id="dropdown">
+      <option>Select one</option>
+      <option>The people</option>
+      <option>The culture</option>
+      <option>The food</option>
+      <option>Other</option>
+    </select>
+
+What prefectures have you visited in Japan? 
+<span>(choose all that apply)</span>
+
+  <label>
+  <input name="visited" type="checkbox" value="hokkaido">Hokkaido</input> </label>
+
+  <label>
+  <input name="visited" type="checkbox" value="miyagi">Miyagi</input>
+ </label>
+
+  <label>
+  <input name="visited" type="checkbox" value="tokyo">Tokyo</input>
+  </label>
+
+  <label>
+  <input name="visited" type="checkbox" value="kyoto">Kyoto</input>
+ </label>
+
+  <label>
+  <input name="visited" type="checkbox" value="osaka">Osaka</input>
+  </label>
+
+  <label>
+  <input name="visited" type="checkbox" value="other">Other</input>
+  </label>
+
+  <p>Any comments or stories? Please write here.</p>
+  <textarea id="comments" class="input-textarea" placeholder="Write your comments..." row="20" cols="30"></textarea>
+
+  <button id="submit">Submit</button>
+  </form>
+</body>
+</html>
